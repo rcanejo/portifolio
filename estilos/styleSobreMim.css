@@ -1,0 +1,104 @@
+/* IMPORTAÇÕES DE FONTES */
+@import url(https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;600&display=swap);
+
+/* VARIÁVEIS */
+
+:root {
+    /* VARIÁVEIS DAS CORES */
+
+    --cor-primaria: #F2ECBE;
+    --cor-secundaria: #9A3B3B;
+    --cor-terciaria: #C08261;
+    --cor-cabecalho-hover: #9A3B3B;
+    
+    /* VARIÁVEIS DAS FONTES */
+
+    --fonte-titulo-subtitulo: 'Krona one', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-cabecalho: 'Montserrat', sans-serif;
+}
+/* CONFIGURAÇÕES INICIAS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO: */
+.cabecalho {
+    padding: 3% 0 0 15%;    
+}
+
+.cabecalho_links{
+    display: flex;
+    gap: 5%;
+}
+
+.cabecalho_links_link {
+    text-decoration: none;
+    font-family: var(--fonte-cabecalho);
+    font-weight: 600px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+}
+
+.cabecalho_links_link:hover {
+    color: var(--cor-cabecalho-hover);
+}
+
+/* CORPO/APRESENTAÇÃO */
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    display: flex;
+    padding: 7% 15% 10% 15%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.apresentacao_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-family: var(--fonte-titulo-subtitulo);
+    font-size: 2.25rem;
+    font-weight: 400px;
+}
+
+.apresentacao_conteudo_texto {
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: justify;
+    color: var(--cor-terciaria);
+}
+
+/* FOOTER/FIM DA PÁGINA */
+
+footer {
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+
+}
+
+.link_externo_instagram {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
