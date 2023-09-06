@@ -67,8 +67,8 @@ body {
 
 .apresentacao {
     display: flex;
-    gap: 163px;
-    padding: 10% 15%;
+    gap: 80px;
+    padding: 10% 5%;
 }
 
 /* MAIN/DISPLAY_LAYOUT */
@@ -202,20 +202,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px;
-    height: 265px;
+    width: 63%;
     padding: 12px 0 0 0;
     background: url("../assets/fundo_span_ofc.png");
     border-radius: 12px;
-    box-shadow: 0 0 200px 20px var(--cor-span-shadow);
+    box-shadow: 0 0 200px 0 var(--cor-span-shadow);
 }
 
 .span_header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 743px;
-    height: 29px;
+    width: 95%;
     background-color: var(--cor-span-header);
     border-radius: 7px;
     font-family: 'Source Code Pro', monospace;
@@ -223,8 +221,10 @@ body {
     text-shadow: 0 0 8px var(--cor-span-texto);
     color: var(--cor-span-texto);
     font-weight: 400;
-    margin: 0 0 35px 0;
+}
 
+.span_central {
+    padding: 5% 0 7% 0;
 }
 
 .span_central_titulo {
@@ -233,6 +233,7 @@ body {
     font-weight: 500;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--cor-span-texto);
+    text-align: center;
 }
 
 .span_central_subtitulo {
@@ -303,4 +304,33 @@ footer {
 .link_externo_instagram {
     text-decoration: none;
     color: var(--cor-primaria);
+}
+
+
+@media (max-width: 1000px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10% 3% 10% 3%;
+    }
+
+    .apresentacao_layout {
+        width: 200px;
+        padding: 12px 10px 0 10px;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .span_central_titulo {
+        font-size: 4rem;
+    }
+
+    .span_central_subtitulo {
+        font-size: 0.70rem;
+    }
 }

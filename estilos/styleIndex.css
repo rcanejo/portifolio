@@ -156,13 +156,17 @@ footer {
 
 @media (max-width: 1200px) {
 
-
     .cabecalho {
-        padding: 10% 0 0 0;
+        padding: 5% 0;
+        box-shadow: 0 20px 50px 0 #e6dfad;
     }
 
     .cabecalho_links {
         justify-content: center;
+    }
+
+    .cabecalho_links_link {
+        font-size: 1.3rem;
     }
 
     .apresentacao {
@@ -173,5 +177,17 @@ footer {
 
     .apresentacao_conteudo {
         width: auto;
+    }
+
+    .apresentacao_conteudo_titulo {
+        font-size: 30px;
+    }
+
+    .imagem_apresentacao_principal {
+        display: none;
+    }
+
+    footer {
+        font-size: 1.3rem;
     }
 }

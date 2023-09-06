@@ -38,7 +38,6 @@
     text-decoration: none;
     font-family: var(--fonte-cabecalho);
     font-weight: 600px;
-    text-decoration: none;
     color: var(--cor-terciaria);
     font-size: 1.5rem;
 }
@@ -85,6 +84,7 @@ body {
     color: var(--cor-terciaria);
 }
 
+
 /* FOOTER/FIM DA PÁGINA */
 
 footer {
@@ -101,4 +101,44 @@ footer {
 .link_externo_instagram {
     text-decoration: none;
     color: var(--cor-primaria);
+}
+
+@media (max-width: 1050px) {
+
+    .cabecalho {
+        padding: 5% 0;
+        box-shadow: 0 20px 50px 0 #e6dfad;
+        width: 100%;
+    }
+
+    .cabecalho_links{
+        justify-content: center;
+    }
+
+    .cabecalho_links_link {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 7% 7%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+    .imagem_sobre_mim {
+        width: 48%;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .imagem_sobre_mim {
+        display: none;
+    }
 }
