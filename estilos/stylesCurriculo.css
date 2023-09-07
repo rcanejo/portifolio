@@ -163,7 +163,6 @@ body {
     font-family: var(--fonte-texto);
     font-size: 1.25rem;
     font-weight: 500;
-    text-align: justify;
     line-height: 30px;
     color: var(--cor-terciaria);
 }
@@ -178,7 +177,8 @@ body {
     margin: 0 0 15px 0;
 }
 
-.topico_formacao_descricao {
+.topico_formacao_descricao,
+.link_certificado_geral {
     font-family: var(--fonte-texto);
     font-size: 1rem;
     padding: 0 0 20px 35px;
@@ -189,6 +189,12 @@ body {
 
 .topico_formacao_link {
     color: var(--cor-secundaria);
+}
+
+.link_certificado_geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topico_experiencia {
@@ -249,7 +255,7 @@ body {
 .topico_habilidades {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 
 .linha_divisoria {
@@ -258,10 +264,15 @@ body {
 
 .topico_habilidades_subtitulos {
     display: flex;
-    gap: 70px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .topico_habilidades_subtitulos_SOFT {
+    text-align: center;
+}
+
+.topico_habilidades_subtitulos_HARD {
     text-align: center;
 }
 
@@ -298,7 +309,6 @@ footer {
     color: var(--cor-primaria);
     text-align: center;
     padding: 23.64px;
-    
 }
 
 .link_externo_instagram {
@@ -308,10 +318,23 @@ footer {
 
 
 @media (max-width: 1000px) {
+    .cabecalho {
+        padding: 5% 0;
+        box-shadow: 0 20px 50px 0 #e6dfad;
+    }
+
+    .cabecalho_links {
+        justify-content: center;
+    }
+
+    .cabecalho_links_link {
+        font-size: 1.3rem;
+    }
+
     .apresentacao {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 10% 3% 10% 3%;
+        padding: 7% 7%;
     }
 
     .apresentacao_layout {
@@ -323,11 +346,30 @@ footer {
         width: auto;
     }
 
+    .apresentacao_conteudo_titulo {
+        font-size: 2rem;
+    }
+
+    .apresentacao_conteudo_texto {
+        font-size: 1rem;
+    }
+
+    .t_h_s_conteudo {
+        font-size: 1rem;
+    }
+
+    .t_h_s_titulo {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 600px) {
     .span_central_titulo {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .span_central_subtitulo {
